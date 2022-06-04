@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>用户登录</title>
+		<link rel="stylesheet"  href="../static/CSS/index_login.css" />
+
+	</head>
+
+	<body>
+    <form method="post">
+		 <div class="login">
+		 	<h2>用户登录</h2>
+			<div class="login_box">
+				<!-- required就是不能为空  必须在css效果中有很大的作用 -->
+				 
+				<input class="form-control" type="text" name='name' id='name' />
+				<label for="name" >用户名</label>
+			</div>
+			<div class="login_box">
+				 
+				<input class="form-control" type="password" name='passwd' id='passwd'>
+				<label for="passwd">密码</label>
+			</div>
+            <button type="submit" class="btn btn-primary">登录</button>
+             <a href="http://localhost:5000/register" target="_blank"><input type="button" name="zhuce" id="zhuce" value="注册"/></a>
+		 </div>
+
+    </form>
+	</body>
+</html>

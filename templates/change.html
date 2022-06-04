@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.one {
+				position: relative;
+			}
+
+			.two {
+				position: absolute;
+				left: 0;
+				top: 30%;
+				left: 40%;
+
+
+			}
+
+			.tree {
+				position: relative;
+
+			}
+
+
+		</style>
+	</head>
+	<body background="/static/img/admin.jpg">
+		<div class="one" align="center">
+			<div class="two">
+				<h1>学生信息管理系统</h1>
+				<h3><b>学生信息修改</b></h3>
+				<!-- action 跳到的新页面 -->
+				<form  method="POST">
+					<table>
+						<tr>
+							<td>姓名 </td>
+							<td><input type="text" name="name" id="name" value={{ name }} readonly></td>
+						</tr>
+
+						<tr>
+							<td>语文成绩 </td>
+							<td><input type="number" name="chinese" id="chinese" maxlength="3" placeholder="分数最高为100" minlength="1"></td>
+						</tr>
+
+                        	<tr>
+							<td>数学成绩 </td>
+							<td><input type="number" name="math" id="math" maxlength="3" placeholder="分数最高为100" minlength="1"></td>
+						</tr>
+
+                        	<tr>
+							<td>英语成绩 </td>
+							<td><input type="number" name="english" id="english"maxlength="3" placeholder="分数最高为100" minlength="1"></td>
+						</tr>
+
+                        <tr>
+							<td colspan="2" id="test">
+								<p align="center"><a href=./admin>返回管理页面</a></p>
+
+							</td>
+						</tr>
+
+
+						<tr>
+							<td colspan="2"><input type="reset" class="reset" style="border-radius: 10px;
+				background-color: lightskyblue;
+				color: white;
+				height: 30px;
+				line-height: 30px;
+				width: 100%;"></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="submit" class="submit" style="border-radius: 12px;
+				background-color: orange;
+				color: white;
+				height: 30px;
+				line-height: 30px;
+				width: 100%;"></td>
+						</tr>
+
+					</table>
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>
